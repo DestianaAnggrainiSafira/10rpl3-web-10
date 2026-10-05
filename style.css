@@ -1,93 +1,514 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wardah Beauty</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+/* ==============================
+   RESET
+================================= */
 
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">WARDAH</div>
+html {
+    scroll-behavior: smooth;
+}
 
-      <ul class="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#produk">Produk</a></li>
-        <li><a href="#tentang">Tentang</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-      </ul>
-    </nav>
-  </header>
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f6e8eb;
+    color: #4d1825;
+}
 
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <p class="subtitle">BEAUTY THAT INSPIRES</p>
-      <h1>Beautiful<br><span>Every Day.</span></h1>
-      <p>
-        Temukan kecantikan alami bersama Wardah.
-        Perawatan kulit yang lembut, nyaman, dan
-        cocok untuk menemani aktivitas sehari-hari.
-      </p>
 
-      <a href="#produk" class="button">Lihat Produk</a>
-    </div>
+/* ==============================
+   NAVBAR
+================================= */
 
-    <div class="hero-image">
-      <img src="foto-wardah.jpg" alt="Produk Wardah">
-    </div>
-  </section>
+header {
+    background: #692536;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-  <section class="products" id="produk">
-    <p class="subtitle">OUR COLLECTION</p>
-    <h2>Produk Favorit</h2>
+.navbar {
+    max-width: 1200px;
+    height: 75px;
+    margin: auto;
+    padding: 0 30px;
 
-    <div class="product-container">
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-      <div class="product-card">
-        <img src="skincare.jpg" alt="Wardah Skincare">
-        <h3>Skincare</h3>
-        <p>Perawatan kulit untuk kulit sehat dan glowing.</p>
-        <a href="#">Explore</a>
-      </div>
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
 
-      <div class="product-card">
-        <img src="makeup.jpg" alt="Wardah Makeup">
-        <h3>Makeup</h3>
-        <p>Makeup cantik untuk berbagai aktivitas.</p>
-        <a href="#">Explore</a>
-      </div>
+.logo span {
+    color: #edc4ca;
+}
 
-      <div class="product-card">
-        <img src="bodycare.jpg" alt="Wardah Bodycare">
-        <h3>Bodycare</h3>
-        <p>Perawatan tubuh dengan sensasi lembut.</p>
-        <a href="#">Explore</a>
-      </div>
+.menu {
+    list-style: none;
 
-    </div>
-  </section>
+    display: flex;
+    gap: 30px;
+}
 
-  <section class="about" id="tentang">
-    <div>
-      <p class="subtitle">ABOUT WARDAH</p>
-      <h2>Beauty in Every Version of You</h2>
-      <p>
-        Wardah hadir untuk menemani setiap perempuan
-        mengekspresikan dirinya dengan percaya diri.
-        Kecantikan bukan tentang menjadi sempurna,
-        tetapi tentang menjadi versi terbaik dari diri sendiri.
-      </p>
-    </div>
-  </section>
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
 
-  <footer id="kontak">
-    <h2>WARDAH</h2>
-    <p>Beauty • Halal • Inspiring</p>
-    <p class="copyright">© 2026 Wardah Beauty Microsite</p>
-  </footer>
+.menu a:hover {
+    color: #efc5cb;
+}
 
-</body>
-</html>
+
+/* ==============================
+   HERO
+================================= */
+
+.hero {
+    min-height: 90vh;
+    padding: 70px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            #a95c6e,
+            #7c3044 45%,
+            #5b1c2d 100%
+        );
+
+    color: white;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.subtitle {
+    color: #f2cbd0;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #f4d8dc;
+}
+
+.description {
+    max-width: 520px;
+
+    color: #f6e5e8;
+    line-height: 1.8;
+    font-size: 16px;
+
+    margin-bottom: 30px;
+}
+
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border-radius: 50px;
+
+    background: #fff;
+    color: #652234;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #efc3ca;
+    transform: translateY(-4px);
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+    width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 35px;
+
+    border: 7px solid rgba(255,255,255,0.18);
+
+    box-shadow:
+        0 25px 60px rgba(40,0,10,0.35);
+}
+
+
+/* ==============================
+   SECTION TITLE
+================================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: #9a5262;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    color: #5b1c2d;
+    margin-bottom: 10px;
+}
+
+.section-title span {
+    color: #85636b;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   ABOUT
+================================= */
+
+.about {
+    padding: 90px 8%;
+    background: #f8edef;
+}
+
+.about-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* BURGUNDY SOFT CARD */
+
+.about-card {
+    padding: 35px 25px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #84384d,
+            #6a2537
+        );
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 35px rgba(100,30,50,0.20);
+
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(100,30,50,0.30);
+}
+
+.icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f2d3d8;
+
+    color: #702638;
+
+    font-size: 27px;
+}
+
+.about-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    color: #f5dfe2;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   COLLECTION
+================================= */
+
+.collection {
+    padding: 90px 8%;
+
+    background: #fff8f8;
+}
+
+.gallery {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.gallery-card {
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background: #702638;
+
+    box-shadow:
+        0 15px 35px rgba(80,20,35,0.15);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.5s;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-text {
+    padding: 20px;
+
+    color: white;
+}
+
+.gallery-text h3 {
+    margin-bottom: 5px;
+}
+
+.gallery-text p {
+    color: #eecdd2;
+
+    font-size: 13px;
+}
+
+
+/* ==============================
+   CTA
+================================= */
+
+.cta {
+    padding: 90px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6d2639,
+            #8b4053
+        );
+}
+
+.cta h2 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.cta p {
+    color: #f2d9dd;
+    margin-bottom: 25px;
+}
+
+.button.light {
+    background: white;
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    background: #481522;
+
+    color: #dcb9bf;
+}
+
+footer .logo {
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
+/* ==============================
+   RESPONSIVE TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .about-grid,
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* ==============================
+   RESPONSIVE HP
+================================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: 65px;
+        padding: 0 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+
+        padding: 60px 25px;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 380px;
+    }
+
+
+    /* SECTION */
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+
+    /* CARD */
+
+    .about-grid,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about,
+    .collection {
+        padding: 70px 25px;
+    }
+
+
+    .gallery-card img {
+        height: 280px;
+    }
+
+
+    /* CTA */
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
+}
