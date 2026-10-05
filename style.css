@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wardah Beauty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">WARDAH</div>
+
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="subtitle">BEAUTY THAT INSPIRES</p>
+      <h1>Beautiful<br><span>Every Day.</span></h1>
+      <p>
+        Temukan kecantikan alami bersama Wardah.
+        Perawatan kulit yang lembut, nyaman, dan
+        cocok untuk menemani aktivitas sehari-hari.
+      </p>
+
+      <a href="#produk" class="button">Lihat Produk</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="foto-wardah.jpg" alt="Produk Wardah">
+    </div>
+  </section>
+
+  <section class="products" id="produk">
+    <p class="subtitle">OUR COLLECTION</p>
+    <h2>Produk Favorit</h2>
+
+    <div class="product-container">
+
+      <div class="product-card">
+        <img src="skincare.jpg" alt="Wardah Skincare">
+        <h3>Skincare</h3>
+        <p>Perawatan kulit untuk kulit sehat dan glowing.</p>
+        <a href="#">Explore</a>
+      </div>
+
+      <div class="product-card">
+        <img src="makeup.jpg" alt="Wardah Makeup">
+        <h3>Makeup</h3>
+        <p>Makeup cantik untuk berbagai aktivitas.</p>
+        <a href="#">Explore</a>
+      </div>
+
+      <div class="product-card">
+        <img src="bodycare.jpg" alt="Wardah Bodycare">
+        <h3>Bodycare</h3>
+        <p>Perawatan tubuh dengan sensasi lembut.</p>
+        <a href="#">Explore</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about" id="tentang">
+    <div>
+      <p class="subtitle">ABOUT WARDAH</p>
+      <h2>Beauty in Every Version of You</h2>
+      <p>
+        Wardah hadir untuk menemani setiap perempuan
+        mengekspresikan dirinya dengan percaya diri.
+        Kecantikan bukan tentang menjadi sempurna,
+        tetapi tentang menjadi versi terbaik dari diri sendiri.
+      </p>
+    </div>
+  </section>
+
+  <footer id="kontak">
+    <h2>WARDAH</h2>
+    <p>Beauty • Halal • Inspiring</p>
+    <p class="copyright">© 2026 Wardah Beauty Microsite</p>
+  </footer>
+
+</body>
+</html>
