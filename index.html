@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Burgundy Soft</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
+    <title>My Profile | Microsite</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -25,15 +20,30 @@
         <nav class="navbar">
 
             <div class="logo">
-                Burgundy<span>Soft</span>
+                MY<span>PROFILE</span>
             </div>
 
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#collection">Collection</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#profile">Profile</a>
+                </li>
+
+                <li>
+                    <a href="#social">Social Media</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
+
+            <a href="#social" class="nav-button">
+                Follow Me
+            </a>
 
         </nav>
     </header>
@@ -42,169 +52,244 @@
     <!-- HERO -->
     <section class="hero" id="home">
 
-        <div class="hero-content">
+        <div class="hero-text">
 
             <p class="subtitle">
-                SOFT • ELEGANT • BEAUTIFUL
+                WELCOME TO MY WEBSITE
             </p>
 
             <h1>
-                Discover Your
-                <span>Soft Side</span>
+                Hello,<br>
+                I'm <span>Alex.</span>
             </h1>
 
             <p class="description">
-                Hadir dengan nuansa burgundy yang lembut,
-                elegan, dan modern. Temukan pengalaman
-                visual yang hangat dan penuh karakter.
+                Saya adalah seorang pelajar yang memiliki
+                ketertarikan pada dunia kreatif, teknologi,
+                desain, dan media sosial.
             </p>
 
-            <a href="#collection" class="button">
-                Explore Now
+            <div class="hero-buttons">
+
+                <a href="#profile" class="primary-button">
+                    My Profile
+                </a>
+
+                <a href="#social" class="secondary-button">
+                    Social Media
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="circle"></div>
+
+            <img src="profile.jpg"
+                 alt="Foto Profil">
+
+        </div>
+
+    </section>
+
+
+    <!-- PROFILE -->
+    <section class="profile" id="profile">
+
+        <div class="profile-image">
+
+            <img src="profile.jpg"
+                 alt="Foto Profile">
+
+        </div>
+
+
+        <div class="profile-content">
+
+            <p class="subtitle">
+                ABOUT ME
+            </p>
+
+            <h2>
+                My Personal<br>
+                <span>Profile</span>
+            </h2>
+
+            <p>
+                Halo! Nama saya Alex. Saya merupakan seseorang
+                yang senang belajar hal-hal baru dan memiliki
+                minat dalam bidang desain, teknologi, fotografi,
+                dan media digital.
+            </p>
+
+            <p>
+                Melalui microsite ini, kamu dapat mengenal
+                saya lebih dekat serta menemukan berbagai
+                akun sosial media saya.
+            </p>
+
+
+            <div class="info">
+
+                <div>
+                    <strong>Nama</strong>
+                    <span>Alex</span>
+                </div>
+
+                <div>
+                    <strong>Profesi</strong>
+                    <span>Student</span>
+                </div>
+
+                <div>
+                    <strong>Domisili</strong>
+                    <span>Indonesia</span>
+                </div>
+
+                <div>
+                    <strong>Hobi</strong>
+                    <span>Design & Photography</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOCIAL MEDIA -->
+    <section class="social" id="social">
+
+        <div class="section-heading">
+
+            <p class="subtitle">
+                FIND ME ONLINE
+            </p>
+
+            <h2>
+                My Social <span>Media</span>
+            </h2>
+
+            <p>
+                Yuk terhubung dan ikuti aktivitas saya
+                melalui sosial media berikut.
+            </p>
+
+        </div>
+
+
+        <div class="social-container">
+
+
+            <!-- INSTAGRAM -->
+            <a href="https://instagram.com/"
+               target="_blank"
+               class="social-card">
+
+                <div class="social-icon instagram">
+                    ◎
+                </div>
+
+                <div>
+                    <h3>Instagram</h3>
+                    <p>@username</p>
+                </div>
+
+                <span class="arrow">→</span>
+
+            </a>
+
+
+            <!-- TIKTOK -->
+            <a href="https://tiktok.com/"
+               target="_blank"
+               class="social-card">
+
+                <div class="social-icon tiktok">
+                    ♪
+                </div>
+
+                <div>
+                    <h3>TikTok</h3>
+                    <p>@username</p>
+                </div>
+
+                <span class="arrow">→</span>
+
+            </a>
+
+
+            <!-- FACEBOOK -->
+            <a href="https://facebook.com/"
+               target="_blank"
+               class="social-card">
+
+                <div class="social-icon facebook">
+                    f
+                </div>
+
+                <div>
+                    <h3>Facebook</h3>
+                    <p>Alex Profile</p>
+                </div>
+
+                <span class="arrow">→</span>
+
+            </a>
+
+
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/6281234567890"
+               target="_blank"
+               class="social-card">
+
+                <div class="social-icon whatsapp">
+                    ☎
+                </div>
+
+                <div>
+                    <h3>WhatsApp</h3>
+                    <p>Chat with me</p>
+                </div>
+
+                <span class="arrow">→</span>
+
             </a>
 
         </div>
 
-
-        <!-- FOTO HERO -->
-        <div class="hero-image">
-
-            <img
-                src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=900&q=80"
-                alt="Burgundy Soft Collection"
-            >
-
-        </div>
-
     </section>
 
 
-    <!-- ABOUT -->
-    <section class="about" id="about">
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
 
-        <div class="section-title">
-            <p>ABOUT US</p>
-            <h2>Burgundy Soft</h2>
+        <div>
 
-            <span>
-                Sentuhan lembut dalam warna burgundy
-            </span>
-        </div>
+            <p class="subtitle">
+                LET'S CONNECT
+            </p>
 
+            <h2>
+                Have a project<br>
+                <span>in mind?</span>
+            </h2>
 
-        <div class="about-grid">
+            <p>
+                Jangan ragu untuk menghubungi saya melalui
+                sosial media yang tersedia.
+            </p>
 
-            <div class="about-card">
-                <div class="icon">♡</div>
-
-                <h3>Soft</h3>
-
-                <p>
-                    Nuansa warna lembut yang memberikan
-                    kesan nyaman dan menenangkan.
-                </p>
-            </div>
-
-
-            <div class="about-card">
-                <div class="icon">✦</div>
-
-                <h3>Elegant</h3>
-
-                <p>
-                    Desain minimalis dengan karakter
-                    burgundy yang elegan dan berkelas.
-                </p>
-            </div>
-
-
-            <div class="about-card">
-                <div class="icon">✿</div>
-
-                <h3>Beautiful</h3>
-
-                <p>
-                    Perpaduan warna dan visual yang
-                    cantik untuk menciptakan pengalaman
-                    yang berkesan.
-                </p>
-            </div>
+            <a href="#social"
+               class="primary-button">
+                Contact Me
+            </a>
 
         </div>
-
-    </section>
-
-
-    <!-- COLLECTION -->
-    <section class="collection" id="collection">
-
-        <div class="section-title">
-            <p>OUR COLLECTION</p>
-            <h2>Beautiful Moments</h2>
-
-            <span>
-                Koleksi dengan sentuhan burgundy soft
-            </span>
-        </div>
-
-
-        <div class="gallery">
-
-            <div class="gallery-card">
-                <img
-                    src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80"
-                    alt="Collection 1"
-                >
-
-                <div class="gallery-text">
-                    <h3>Soft Beauty</h3>
-                    <p>Simple & elegant</p>
-                </div>
-            </div>
-
-
-            <div class="gallery-card">
-                <img
-                    src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80"
-                    alt="Collection 2"
-                >
-
-                <div class="gallery-text">
-                    <h3>Elegant Touch</h3>
-                    <p>Beautiful & timeless</p>
-                </div>
-            </div>
-
-
-            <div class="gallery-card">
-                <img
-                    src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80"
-                    alt="Collection 3"
-                >
-
-                <div class="gallery-text">
-                    <h3>Soft Moment</h3>
-                    <p>Warm & comfortable</p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CTA -->
-    <section class="cta" id="contact">
-
-        <h2>Feel The Softness</h2>
-
-        <p>
-            Burgundy yang lembut, elegan, dan penuh karakter.
-        </p>
-
-        <a href="#home" class="button light">
-            Get Started
-        </a>
 
     </section>
 
@@ -212,12 +297,18 @@
     <!-- FOOTER -->
     <footer>
 
-        <div class="logo">
-            Burgundy<span>Soft</span>
+        <div class="footer-logo">
+            MYPROFILE
         </div>
 
         <p>
-            © 2026 Burgundy Soft. All Rights Reserved.
+            Personal Microsite
+        </p>
+
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © 2026 Alex. All Rights Reserved.
         </p>
 
     </footer>
